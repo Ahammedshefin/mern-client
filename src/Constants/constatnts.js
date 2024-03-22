@@ -1,1 +1,1 @@
-export const server='http://localhost:3000'
+export const server='https://mern-server-q792.onrender.com'
