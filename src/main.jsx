@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter,HashRouter } from "react-router-dom";
 import "./index.css";
 import { Authprovider } from "./Context/UserContext.jsx";
 import { ToastContainer } from "react-toastify";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <BrowserRouter>
+        <HashRouter>
             <Authprovider>
                 <App />
                 <ToastContainer
@@ -26,6 +26,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     bodyClassName="toastBody"
                 />
             </Authprovider>
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>
 );
