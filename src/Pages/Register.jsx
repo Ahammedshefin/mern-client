@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { server } from "../Constants/constatnts";
 
@@ -30,8 +30,8 @@ function Register() {
         if (response.ok) {
             setuser({ username: "", email: "", phone: "", password: "" });
             navigate("/login");
-        }else{
-            console.log(response);
+        } else {
+            toast.error("Email Already Exist");
         }
     };
 
