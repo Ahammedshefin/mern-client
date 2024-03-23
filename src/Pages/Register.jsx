@@ -32,6 +32,11 @@ function Register() {
             navigate("/login");
         } else {
             toast.error("Email Already Exist");
+
+
+
+
+            
         }
     };
 
