@@ -30,6 +30,8 @@ function Register() {
         if (response.ok) {
             setuser({ username: "", email: "", phone: "", password: "" });
             navigate("/login");
+        }else{
+            console.log(response);
         }
     };
 
